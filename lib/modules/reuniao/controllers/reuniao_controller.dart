@@ -1,4 +1,4 @@
-import 'package:copelefrontend/modules/reuniao/models/reuniao_model.dart';
+import 'package:copelefrontend/modules/reuniao/models/meeting_model.dart';
 import 'package:copelefrontend/modules/reuniao/services/reuniao_service.dart';
 
 
@@ -7,7 +7,7 @@ class ReuniaoController {
 
   ReuniaoController(this.service);
 
-  List<ReuniaoModel> reunioes = [];
+  List<MeetingModel> reunioes = [];
 
   Future<void> fetchMeets() async {
     reunioes = await service.buscarReunioes();

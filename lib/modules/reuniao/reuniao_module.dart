@@ -1,5 +1,6 @@
 import 'package:copelefrontend/modules/reuniao/controllers/reuniao_controller.dart';
-import 'package:copelefrontend/modules/reuniao/pages/reuniao_page.dart';
+import 'package:copelefrontend/modules/reuniao/pages/meeting_page.dart';
+import 'package:copelefrontend/modules/reuniao/pages/meetings_page.dart';
 import 'package:copelefrontend/modules/reuniao/services/reuniao_service.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
@@ -12,6 +13,7 @@ class ReuniaoModule extends Module {
 
   @override
   void routes(RouteManager r) {
-    r.child('/', child: (_) => ReuniaoPage());
+    r.child('/', child: (_) => MeetingsPage());
+   
   }
 }
