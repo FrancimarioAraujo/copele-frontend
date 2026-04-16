@@ -10,6 +10,6 @@ class MeetingPage extends StatefulWidget {
 class _MeetingPageState extends State<MeetingPage> {
   @override
   Widget build(BuildContext context) {
-    return Container(child: Text('Detalhes da reunião'),);
+    return Text('Detalhes da reunião');
   }
 }
